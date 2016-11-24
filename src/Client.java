@@ -55,7 +55,7 @@ public class Client {
 				@Override
 				public void run() {
 					// TODO Auto-generated method stub
-					System.out.println("in send thread");
+					//System.out.println("in send thread");
 					
 						while(true)
 						{
@@ -70,7 +70,7 @@ public class Client {
 
 				@Override
 				public void run() {
-					System.out.println("in receive thread");
+					//System.out.println("in receive thread");
 				
 						while(true){
 							receiveThreadMethod();
@@ -103,7 +103,7 @@ public class Client {
 			//Close connections
 			try{
 				
-				System.out.println("finally/....");
+				//System.out.println("finally/....");
 				in.close();
 				out.close();
 				requestSocket.close();
